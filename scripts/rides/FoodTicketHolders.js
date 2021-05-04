@@ -10,3 +10,13 @@ export const FoodTicketHolders = () => {
         }
     )
 }
+
+export const FullFoodTicketHolders = () => {
+    eventHub.addEventListener(
+        "fullPackageTicketPurchased",
+        (CustomEvent) => {
+            contentTarget.innerHTML += "<div class='person bigSpender'></div>"
+            return contentTarget.innerHTML
+        }
+    )
+}

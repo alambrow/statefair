@@ -1,5 +1,5 @@
 // Import and invoke the ticket booth component functions here
-import { FoodTicketHolders } from "./rides/FoodTicketHolders.js";
+import { FoodTicketHolders, FullFoodTicketHolders } from "./rides/FoodTicketHolders.js";
 import { GameTicketHolders } from "./rides/GameTicketHolders.js";
 import { RideTicketHolders } from "./rides/RideTicketHolders.js";
 import { SideshowTicketHolders } from "./sideshows/SideshowTicketHolders.js";
@@ -10,3 +10,4 @@ RideTicketHolders()
 FoodTicketHolders()
 GameTicketHolders()
 SideshowTicketHolders()
+FullFoodTicketHolders()
