@@ -10,3 +10,13 @@ export const SideshowTicketHolders = () => {
         }
     )
 }
+
+export const FullSideshowTicketHolders = () => {
+    eventHub.addEventListener(
+        "fullPackageTicketPurchased",
+        (CustomEvent) => {
+            contentTarget.innerHTML += "<div class='person bigSpender'></div>"
+            return contentTarget.innerHTML
+        }
+    )
+}

@@ -9,3 +9,13 @@ export const RideTicketHolders = () => {
             return contentTarget.innerHTML
     })
 }
+
+export const FullRideTicketHolders = () => {
+    eventHub.addEventListener(
+        "fullPackageTicketPurchased",
+        (CustomEvent) => {
+            contentTarget.innerHTML += "<div class='person bigSpender'></div>"
+            return contentTarget.innerHTML
+        }
+    )
+}

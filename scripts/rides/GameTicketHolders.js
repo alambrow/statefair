@@ -10,3 +10,13 @@ export const GameTicketHolders = () => {
         }
     )
 }
+
+export const FullGameTicketHolders = () => {
+    eventHub.addEventListener(
+        "fullPackageTicketPurchased",
+        (CustomEvent) => {
+            contentTarget.innerHTML += "<div class='person bigSpender'></div>"
+            return contentTarget.innerHTML
+        }
+    )
+}
