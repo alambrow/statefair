@@ -2,7 +2,10 @@
 
 /*Typography
 --------------------------------------------------------------*/
-body,
+body {
+    margin: 0;
+    padding: 0;
+},
 button,
 input,
 select,
@@ -13,9 +16,22 @@ textarea {
 	line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
+}
+
+.customers{
+    background-color: rgb(255, 154, 81);
+}
+
+h2 {
+    font-family: "Patua One", serif;
+    font-size: xx-large;
+    letter-spacing: 3px;
+    text-align: center;
+    background-color: rgb(255, 154, 81);
+    color: azure;
 }
 
 .entry {
@@ -46,6 +62,7 @@ h1,h2,h3,h4,h5,h6 {
     border-left: 1px dashed gray;
     border-right: 1px dashed gray;
     text-align: center;
+    background-color: rgb(66, 245, 146, .75);
 }
 
 .people {
@@ -63,22 +80,32 @@ h1,h2,h3,h4,h5,h6 {
 
 .eater {
     background-color: fuchsia;
+    border: .3rem dotted dodgerblue;
+    border-radius: 15%;
 }
 
 .rider {
     background-color: dodgerblue;
+    border: .3rem dotted rgb(30, 255, 49);
+    border-radius: 15%;
 }
 
 .bigSpender {
     background-color: orange;
+    border: .3rem dotted rgb(255, 30, 116);
+    border-radius: 15%;
 }
 
 .player {
-    background-color: lawngreen;
+    background-color: rgb(0, 252, 42);
+    border: .3rem dotted rgb(255, 30, 30);
+    border-radius: 15%;
 }
 
 .gawker {
     background-color: firebrick;
+    border: .3rem dotted rgb(154, 30, 255);
+    border-radius: 15%;
 }
 
 .customers {
@@ -86,3 +113,9 @@ h1,h2,h3,h4,h5,h6 {
     padding: 1rem;
 }
 
+.ticketDisplay {
+    padding: 1rem;
+    background-color: dodgerblue;
+    font-weight: bold;
+    color: azure;
+}
