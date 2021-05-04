@@ -18,12 +18,20 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+.entry {
+    background-color: dodgerblue;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
 .ticketBooth {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .attractions {
