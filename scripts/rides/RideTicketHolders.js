@@ -9,4 +9,3 @@ export const RideTicketHolders = () => {
             return contentTarget.innerHTML
     })
 }
-
